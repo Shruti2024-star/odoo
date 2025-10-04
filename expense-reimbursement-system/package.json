@@ -1,0 +1,19 @@
+{
+  "name": "expense-reimbursement-system",
+  "version": "1.0.0",
+  "description": "Complete MERN stack expense reimbursement system",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm start",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && npm start"
+  },
+  "keywords": ["expense", "reimbursement", "approval", "workflow", "mern"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
